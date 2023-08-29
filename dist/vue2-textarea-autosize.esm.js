@@ -91,28 +91,34 @@ var script = {
     resize: function resize() {
       var _this = this;
 
-      var important = this.isHeightImportant ? 'important' : '';
-      this.height = "auto".concat(important ? ' !important' : '');
+      this.height = "auto".concat(this.isHeightImportant ? ' !important' : '');
       this.$nextTick(function () {
-        var contentHeight = _this.$el.scrollHeight + 1;
+        _this.setupHeight();
 
-        if (_this.minHeight) {
-          contentHeight = contentHeight < _this.minHeight ? _this.minHeight : contentHeight;
-        }
-
-        if (_this.maxHeight) {
-          if (contentHeight > _this.maxHeight) {
-            contentHeight = _this.maxHeight;
-            _this.maxHeightScroll = true;
-          } else {
-            _this.maxHeightScroll = false;
-          }
-        }
-
-        var heightVal = contentHeight + 'px';
-        _this.height = "".concat(heightVal).concat(important ? ' !important' : '');
+        _this.$nextTick(function () {
+          _this.setupHeight();
+        });
       });
       return this;
+    },
+    setupHeight: function setupHeight() {
+      var contentHeight = this.$el.scrollHeight + 1;
+
+      if (this.minHeight) {
+        contentHeight = contentHeight < this.minHeight ? this.minHeight : contentHeight;
+      }
+
+      if (this.maxHeight) {
+        if (contentHeight > this.maxHeight) {
+          contentHeight = this.maxHeight;
+          this.maxHeightScroll = true;
+        } else {
+          this.maxHeightScroll = false;
+        }
+      }
+
+      var heightVal = "".concat(contentHeight, "px");
+      this.height = "".concat(heightVal).concat(this.isHeightImportant ? ' !important' : '');
     }
   },
   created: function created() {

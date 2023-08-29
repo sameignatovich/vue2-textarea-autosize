@@ -84,29 +84,34 @@ export default {
   },
   methods: {
     resize () {
-      const important = this.isHeightImportant ? 'important' : ''
-      this.height = `auto${important ? ' !important' : ''}`
+      this.height = `auto${this.isHeightImportant ? ' !important' : ''}`
       this.$nextTick(() => {
-        let contentHeight = this.$el.scrollHeight + 1
-
-        if (this.minHeight) {
-          contentHeight = contentHeight < this.minHeight ? this.minHeight : contentHeight
-        }
-
-        if (this.maxHeight) {
-          if (contentHeight > this.maxHeight) {
-            contentHeight = this.maxHeight
-            this.maxHeightScroll = true
-          } else {
-            this.maxHeightScroll = false
-          }
-        }
-
-        const heightVal = contentHeight + 'px'
-        this.height = `${heightVal}${important ? ' !important' : ''}`
+        this.setupHeight()
+        this.$nextTick(() => {
+          this.setupHeight()
+        })
       })
 
       return this
+    },
+    setupHeight() {
+      let contentHeight = this.$el.scrollHeight + 1
+
+      if (this.minHeight) {
+        contentHeight = contentHeight < this.minHeight ? this.minHeight : contentHeight
+      }
+
+      if (this.maxHeight) {
+        if (contentHeight > this.maxHeight) {
+          contentHeight = this.maxHeight
+          this.maxHeightScroll = true
+        } else {
+          this.maxHeightScroll = false
+        }
+      }
+
+      const heightVal = `${contentHeight}px`
+      this.height = `${heightVal}${this.isHeightImportant ? ' !important' : ''}`
     }
   },
   created () {
