@@ -1,17 +1,17 @@
 module.exports = {
-  base: '/vue-textarea-autosize/',
+  base: '/vue2-textarea-autosize/',
   plugins: [
     require('./plugin.js')
   ],
   locales: {
     '/': {
       lang: 'en-US',
-      title: 'VueTextareaAutosize',
-      description: 'TextareaAutosize plugin for Vue.js'
+      title: 'Vue2TextareaAutosize',
+      description: 'TextareaAutosize plugin for Vue.js 2'
     }
   },
   themeConfig: {
-    repo: 'https://github.com/devstark-com/vue-textarea-autosize/',
+    repo: 'https://github.com/sameignatovich/vue2-textarea-autosize/',
     docsDir: 'docs',
     locales: {
       '/': {
@@ -20,7 +20,7 @@ module.exports = {
         editLinkText: 'Edit this page on GitHub',
         nav: [{
           text: 'Release Notes',
-          link: 'https://github.com/devstark-com/vue-textarea-autosize/releases'
+          link: 'https://github.com/sameignatovich/vue2-textarea-autosize/releases'
         }],
         sidebar: [
           '/',

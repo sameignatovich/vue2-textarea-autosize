@@ -1,6 +1,6 @@
 # Introduction
 
-The plugin for [Vue.js](http://vuejs.org) provides the dead-simple Vue component implements textarea with automatically adjustable height.
+The plugin for [Vue.js 2](http://vuejs.org) provides the dead-simple Vue component implements textarea with automatically adjustable height.
 
 ---
 
@@ -17,5 +17,4 @@ The plugin for [Vue.js](http://vuejs.org) provides the dead-simple Vue component
 
 ---
 
-[GitHub](https://github.com/devstark-com/vue-textarea-autosize/) |
-[Demo](https://codesandbox.io/s/vuetextareaautosize-demo-vikj3?fontsize=14) | [More packages](https://github.com/devstark-com) by [DevStark](https://devstark.com/)
+[GitHub](https://github.com/sameignatovich/vue2-textarea-autosize/) |

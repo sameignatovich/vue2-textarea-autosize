@@ -5,20 +5,20 @@
 ### NPM
 
 ```sh
-$ npm i -S vue-textarea-autosize
+$ npm i -S vue2-textarea-autosize
 ```
 
 ### Yarn
 
 ```sh
-$ yarn add vue-textarea-autosize
+$ yarn add vue2-textarea-autosize
 ```
 
 ### Register the plugin
 
 ```javascript
 import Vue from 'vue'
-import VueTextareaAutosize from 'vue-textarea-autosize'
+import VueTextareaAutosize from 'vue2-textarea-autosize'
 
 Vue.use(VueTextareaAutosize)
 ```
