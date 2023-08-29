@@ -1,12 +1,12 @@
 /*!
- * vue-textarea-autosize v1.1.1 
- * (c) 2019 Saymon
+ * vue2-textarea-autosize v1.0.0 
+ * (c) 2023 Nikita Ignatovich
  * Released under the MIT License.
  */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
-  (global = global || self, global.VueTextareaAutosize = factory());
+  (global = global || self, global.Vue2TextareaAutosize = factory());
 }(this, function () { 'use strict';
 
   //
@@ -246,7 +246,7 @@
       undefined
     );
 
-  var version = '1.1.1';
+  var version = '1.0.0';
 
   var install = function install(Vue) {
     Vue.component('TextareaAutosize', TextareaAutosize);
