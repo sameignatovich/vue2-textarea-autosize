@@ -8,7 +8,7 @@
 The plugin for [Vue.js 2](http://vuejs.org) provides the Vue component implements textarea with automatically adjustable height and without any wrappers and dependencies.
 
 # Docs
-<a href="https://sameignatovich.github.io/vue2-textarea-autosize/" target="_blank">HERE</a>
+<a href="https://MediaCubeCo.github.io/vue2-textarea-autosize/" target="_blank">HERE</a>
 
 ---
 

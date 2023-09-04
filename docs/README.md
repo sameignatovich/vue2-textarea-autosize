@@ -17,4 +17,4 @@ The plugin for [Vue.js 2](http://vuejs.org) provides the dead-simple Vue compone
 
 ---
 
-[GitHub](https://github.com/sameignatovich/vue2-textarea-autosize/)
+[GitHub](https://github.com/MediaCubeCo/vue2-textarea-autosize/)

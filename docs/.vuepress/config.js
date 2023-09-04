@@ -11,7 +11,7 @@ module.exports = {
     }
   },
   themeConfig: {
-    repo: 'https://github.com/sameignatovich/vue2-textarea-autosize/',
+    repo: 'https://github.com/MediaCubeCo/vue2-textarea-autosize/',
     docsDir: 'docs',
     locales: {
       '/': {
@@ -20,7 +20,7 @@ module.exports = {
         editLinkText: 'Edit this page on GitHub',
         nav: [{
           text: 'Release Notes',
-          link: 'https://github.com/sameignatovich/vue2-textarea-autosize/releases'
+          link: 'https://github.com/MediaCubeCo/vue2-textarea-autosize/releases'
         }],
         sidebar: [
           '/',
